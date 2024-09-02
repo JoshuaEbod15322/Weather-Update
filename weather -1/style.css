@@ -1,0 +1,125 @@
+body {
+    background-image: url(img/PbVE.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}   
+
+.container {
+    width: 850px;
+    background: rgba(204, 200, 204, 0.50);
+    box-shadow: 0 0px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px;  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 10px 22px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background-color: rgb(233, 240, 240);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+    display: inline;
+}
+
+#weather {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.weather-current .city-name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.weather-current .current-icon {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.weather-current .current-info p {
+    font-size: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 10px;
+}
+
+.day {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0px 32px rgba(148, 139, 139, 0.979);
+    width: 150px;
+    transition: 0.5s;
+}
+
+.day:hover {
+    background: rgba(170, 194, 238, 0.411);
+}
+
+.footer {
+    width: 100%;
+    background: rgba(204, 200, 204, 0.2);
+    color: white;
+    text-align: left;
+    padding: 20px 0;
+    padding-left: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
